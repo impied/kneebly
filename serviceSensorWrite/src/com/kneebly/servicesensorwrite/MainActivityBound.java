@@ -40,7 +40,7 @@ public class MainActivityBound extends Activity {
 		super.onDestroy();
 
 		// Unbind from the service
-		if (mBound) {
+		if (mBound) { 
 			unbindService(mConnection);
 			mBound = false;
 		}
